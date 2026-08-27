@@ -8,7 +8,7 @@ export const profile = {
   locationShort: "Padang, Indonesia",
   region: "Sumatera Barat",
   email: "refdinalal@gmail.com",
-  website: "https://refdinal.com",
+  website: "https://www.refdinalf.com",
   image: "/images/profile.png",
   social: {
     github: "https://github.com/Refdinal",
