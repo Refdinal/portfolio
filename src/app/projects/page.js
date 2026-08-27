@@ -5,9 +5,9 @@ import { buildMetadata } from "@/lib/seo";
 import { projects } from "@/data/projects";
 
 export const metadata = buildMetadata({
-  title: "Projects",
+  title: "Projects — Web Development, IT Assessment & Data Analysis",
   description:
-    "Kumpulan project Refdinal: dari website informasi, aplikasi internal pendukung assessment, hingga analisis data.",
+    "Kumpulan project Refdinal F, S.T.: pembuatan website nagari & instansi, aplikasi internal IT assessment, dan analisis data — dikerjakan di Padang & Sumatera Barat.",
   path: "/projects",
 });
 

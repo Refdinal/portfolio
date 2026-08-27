@@ -6,9 +6,9 @@ import { buildMetadata } from "@/lib/seo";
 import { profile } from "@/data/profile";
 
 export const metadata = buildMetadata({
-  title: "Tentang Saya",
+  title: "Tentang — IT Professional Padang, Sumatera Barat",
   description:
-    "Kenali Refdinal lebih jauh: latar belakang di bidang IT, pengalaman web development, data analysis, dan ketertarikan pada information security serta IT governance.",
+    "Kenali Refdinal F, S.T.: IT professional & web developer di Padang, Sumatera Barat. Berpengalaman di web development, information security, IT assessment, IT governance, dan data analysis.",
   path: "/about",
 });
 

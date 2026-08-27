@@ -25,7 +25,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-3 text-xl font-semibold leading-snug text-inkwell sm:text-2xl">
-              {profile.role} — Web Development &amp; Information Security
+              {profile.role} · Web Development &amp; Information Security · {profile.region}
             </p>
 
             <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-muted lg:mx-0">

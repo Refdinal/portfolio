@@ -5,9 +5,9 @@ import { buildMetadata } from "@/lib/seo";
 import { experience } from "@/data/experience";
 
 export const metadata = buildMetadata({
-  title: "Experience",
+  title: "Pengalaman — IT & Web Development",
   description:
-    "Riwayat profesional Refdinal: pengalaman di information security, IT assessment, web development, data analysis, dan administrasi.",
+    "Riwayat profesional Refdinal F, S.T. di Padang, Sumatera Barat: information security, IT assessment, web development, dan data analysis.",
   path: "/experience",
 });
 

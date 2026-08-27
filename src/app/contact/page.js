@@ -6,8 +6,9 @@ import { buildMetadata } from "@/lib/seo";
 import { profile } from "@/data/profile";
 
 export const metadata = buildMetadata({
-  title: "Contact",
-  description: "Hubungi Refdinal melalui email, LinkedIn, atau GitHub.",
+  title: "Kontak — Jasa IT, Web & Keamanan Siber Padang",
+  description:
+    "Hubungi Refdinal F, S.T. untuk jasa pembuatan website nagari & desa, pembuatan & perbaikan website, penanganan website kena hack, keamanan siber, konsultasi IT gratis, IT assessment, dan analisis data di Padang, Bukittinggi, dan Sumatera Barat.",
   path: "/contact",
 });
 
@@ -71,7 +72,9 @@ export default function ContactPage() {
           </Button>
         </div>
 
-        <p className="mt-8 text-sm text-muted">Lokasi: {profile.location}</p>
+        <p className="mt-8 text-sm text-muted">
+          Lokasi: {profile.location} — melayani {profile.areaServed.slice(0, 3).join(", ")} dan sekitarnya.
+        </p>
       </Container>
     </>
   );

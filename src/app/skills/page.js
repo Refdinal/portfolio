@@ -5,9 +5,9 @@ import { buildMetadata } from "@/lib/seo";
 import { skillCategories, skillLevels } from "@/data/skills";
 
 export const metadata = buildMetadata({
-  title: "Skills",
+  title: "Skills — Web Development, Information Security & Data Analysis",
   description:
-    "Kemampuan Refdinal di bidang web development, information security, IT assessment, IT governance, dan data analysis.",
+    "Kemampuan Refdinal F, S.T. di bidang web development (React, Node.js), information security (ISO/IEC 27001), IT assessment, IT governance, dan data analysis.",
   path: "/skills",
 });
 

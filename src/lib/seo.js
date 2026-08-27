@@ -88,6 +88,28 @@ export function websiteSchema() {
   };
 }
 
+export function localBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: profile.name,
+    url: SITE_URL,
+    image: absoluteUrl(profile.image),
+    description: profile.tagline,
+    email: profile.email,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Padang",
+      addressRegion: "Sumatera Barat",
+      addressCountry: "ID",
+    },
+    areaServed: profile.areaServed.map((name) => ({ "@type": "Place", name })),
+    serviceType: profile.services,
+    founder: { "@type": "Person", name: profile.name },
+    sameAs: Object.values(profile.social).filter(Boolean),
+  };
+}
+
 export function projectSchema(project) {
   return {
     "@context": "https://schema.org",

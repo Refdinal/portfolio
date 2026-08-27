@@ -13,17 +13,46 @@ import { buildMetadata } from "@/lib/seo";
 import { profile } from "@/data/profile";
 
 export const metadata = buildMetadata({
-  title: "Refdinal — IT Professional | Web Development & Information Security",
-  description: profile.tagline,
+  title:
+    "Refdinal F, S.T. — IT Consultant Padang & Web Developer | Web Development, Information Security, IT Assessment",
+  description:
+    "Refdinal F, S.T., IT professional & IT consultant di Padang, Sumatera Barat. Melayani jasa pembuatan website nagari & desa, pembuatan website, perbaikan website, penanganan website kena hack, jasa keamanan siber, konsultasi IT gratis, IT assessment, dan analisis data untuk wilayah Padang, Bukittinggi, dan Sumatera Barat.",
   path: "/",
 });
 
 const focusAreas = [
-  { title: "Web Development", text: "Membangun website dan aplikasi dengan React.js dan Node.js." },
-  { title: "Information Security", text: "Mendukung incident response dan security monitoring." },
-  { title: "IT Assessment", text: "Mendukung evaluasi dan pengelolaan teknologi informasi." },
-  { title: "IT Governance", text: "Mendukung dokumentasi dan kepatuhan ISO/IEC 27001." },
-  { title: "Data Analysis", text: "Melakukan analisis dan visualisasi data untuk insight." },
+  {
+    title: "Jasa Pembuatan Website Nagari & Desa",
+    text: "Website informasi nagari/desa: profil, berita, data, dan agenda — seperti project Kamang Tangah Anam Suku.",
+  },
+  {
+    title: "Jasa Pembuatan Website & Web Development",
+    text: "Website instansi dan usaha dengan React.js, Node.js, dan PostgreSQL, dari desain hingga deployment.",
+  },
+  {
+    title: "Perbaikan & Pemulihan Website",
+    text: "Membantu memperbaiki website yang error, bermasalah, atau terkena serangan dan mengembalikannya seperti semula.",
+  },
+  {
+    title: "Jasa Keamanan Siber (Cyber Security)",
+    text: "Penanganan website yang kena hack, incident response, security monitoring, dan penguatan keamanan situs Anda.",
+  },
+  {
+    title: "Konsultasi IT Gratis Dahulu",
+    text: "Diskusikan dulu kebutuhan website atau sistem Anda secara gratis sebelum memutuskan langkah berikutnya.",
+  },
+  {
+    title: "IT Consultant & IT Assessment",
+    text: "Menilai pengelolaan teknologi informasi organisasi dan menyusun rekomendasi perbaikan yang bisa ditindaklanjuti.",
+  },
+  {
+    title: "Information Security & Governance",
+    text: "Security monitoring, dokumentasi ISO/IEC 27001, dan tata kelola keamanan informasi.",
+  },
+  {
+    title: "Data Analysis",
+    text: "Analisis dan visualisasi data untuk membantu pengambilan keputusan.",
+  },
 ];
 
 const inner = "mx-auto w-full max-w-5xl px-4 sm:px-6";
@@ -42,9 +71,9 @@ export default function Home() {
         <div className={`py-16 sm:py-20 ${inner}`}>
           <SectionHeader
             id="what-i-do"
-            eyebrow="What I Do"
-            title="Bidang yang saya tekuni"
-            description="Saya bekerja di persimpangan antara pengembangan perangkat lunak dan pengelolaan keamanan informasi, selalu dengan pendekatan yang jujur dan berdasarkan pengalaman nyata."
+            eyebrow="Layanan"
+            title="Jasa IT, Web Development & Keamanan Siber"
+            description="Melayani jasa pembuatan website, perbaikan website rusak atau kena hack, keamanan siber, IT consultancy, IT assessment, dan analisis data untuk wilayah Padang, Bukittinggi, dan Sumatera Barat — mengutamakan pengalaman nyata dan hasil yang bisa dibuktikan."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {focusAreas.map(({ title, text }) => (
@@ -53,6 +82,33 @@ export default function Home() {
                 <p className="mt-2 text-sm text-muted">{text}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-border bg-paper p-6 text-foreground shadow-sm">
+            <h3 className="text-base font-bold">
+              Berbasis di Padang, melayani Sumatera Barat
+            </h3>
+            <p className="mt-2 text-sm text-muted">
+              Melayani jasa pembuatan website nagari, desa, instansi & usaha, perbaikan
+              website, penanganan website kena hack, jasa keamanan siber, serta konsultasi
+              IT gratis dahulu untuk wilayah {profile.areaServed.join(", ")}.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {profile.areaServed.map((area) => (
+                <span
+                  key={area}
+                  className="rounded-full bg-inkwell/10 px-3 py-1 text-xs font-medium text-inkwell"
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+            <div className="mt-5">
+              <Button href="/contact" variant="primary" size="sm">
+                Konsultasi Gratis
+                <ArrowRightIcon className="h-4 w-4" />
+              </Button>
+            </div>
           </div>
         </div>
       </section>

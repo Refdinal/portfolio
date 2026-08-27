@@ -1,9 +1,10 @@
 import { Inter_Tight, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_URL, personSchema, websiteSchema } from "@/lib/seo";
+import { SITE_URL, personSchema, websiteSchema, localBusinessSchema } from "@/lib/seo";
 import { profile } from "@/data/profile";
 
 const interTight = Inter_Tight({
@@ -52,10 +53,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <GoogleAnalytics />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <JsonLd data={[personSchema(), websiteSchema()]} />
+        <JsonLd data={[personSchema(), websiteSchema(), localBusinessSchema()]} />
       </body>
     </html>
   );
