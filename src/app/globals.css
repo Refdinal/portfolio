@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* DESIGN.md palette */
+  --paper: #ffffff;
+  --obsidian: #000000;
+  --inkwell: #004b82;
+  --on-accent: #ffffff;
+  --persimmon: #fd9b65;
+  --blush: #e9d1c7;
+  --candlelight: #f8f5d1;
+  --sage: #9ac8ae;
+  --moss: #4c564b;
+  --fossil: #a4b1b3;
+
+  --muted: #3e3b35;
+  --border: rgba(0, 0, 0, 0.14);
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --background: var(--paper);
+  --foreground: var(--obsidian);
+}
+
+.dark {
+  --paper: #12100d;
+  --obsidian: #f5efe6;
+  --inkwell: #5a93dd;
+  --on-accent: #10100e;
+  --persimmon: #3a2a22;
+  --blush: #2b201d;
+  --candlelight: #26231a;
+  --sage: #1f2920;
+  --moss: #4c564b;
+  --fossil: #2a2723;
+
+  --muted: #c8c0b3;
+  --border: rgba(245, 239, 230, 0.16);
+  --card: #1a1713;
+  --card-foreground: #f5efe6;
+  --background: var(--paper);
+  --foreground: var(--obsidian);
 }
 
 @theme inline {
+  --color-paper: var(--paper);
+  --color-obsidian: var(--obsidian);
+  --color-inkwell: var(--inkwell);
+  --color-on-accent: var(--on-accent);
+  --color-persimmon: var(--persimmon);
+  --color-blush: var(--blush);
+  --color-candlelight: var(--candlelight);
+  --color-sage: var(--sage);
+  --color-moss: var(--moss);
+  --color-fossil: var(--fossil);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-accent: var(--inkwell);
+  --color-accent-foreground: var(--on-accent);
+
+  --font-sans: var(--font-inter-tight);
   --font-mono: var(--font-geist-mono);
+
+  --radius-field: 0.5rem;
+
+  --text-caption: 1rem;
+  --text-caption--line-height: 1.3;
+  --text-caption--letter-spacing: 0.01em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: var(--paper);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--inkwell) 20%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--inkwell);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
