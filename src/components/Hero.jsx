@@ -29,9 +29,9 @@ export function Hero() {
             </p>
 
             <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-muted lg:mx-0">
-              Saya senang mempelajari teknologi melalui project nyata dan membangun solusi
-              yang membantu menyelesaikan permasalahan praktis di bidang web development,
-              information security, dan IT assessment.
+              Saya membantu organisasi dan usaha menyelesaikan masalah nyata dengan
+              teknologi — membangun website yang andal, memperbaiki yang bermasalah, dan
+              memperkuat keamanan sistem informasi dari ancaman siber.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
