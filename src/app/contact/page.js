@@ -44,7 +44,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Mari Terhubung"
-        description="Silakan hubungi saya melalui salah satu kanal di bawah. Biasanya saya responsif terhadap email."
+        description="Silakan hubungi saya melalui salah satu kanal di bawah. Respons tercepat melalui WhatsApp."
         bg="bg-persimmon"
       />
 
