@@ -24,14 +24,25 @@ export function Hero() {
               Hi, saya <span className="text-inkwell">{profile.firstName}</span>
             </h1>
 
-            <p className="mt-3 text-xl font-semibold leading-snug text-inkwell sm:text-2xl">
-              {profile.role} · {profile.region}
+            <p className="mt-4 text-lg italic leading-snug text-muted sm:text-xl">
+              Technology should solve problems, not create new ones.
             </p>
 
-            <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-muted lg:mx-0">
-              Saya membantu organisasi dan usaha menyelesaikan masalah nyata dengan
-              teknologi — membangun website yang andal, memperbaiki yang bermasalah, dan
-              memperkuat keamanan sistem informasi dari ancaman siber.
+            <p className="mx-auto mt-5 max-w-md text-base leading-relaxed lg:mx-0">
+              Saya adalah{" "}
+              <span className="font-semibold text-inkwell">{profile.role}</span> yang
+              membantu organisasi membangun, memperbaiki, dan mengamankan sistem digital
+              mereka.
+            </p>
+
+            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted lg:mx-0">
+              Mulai dari pengembangan website dan aplikasi, troubleshooting sistem, hingga
+              keamanan informasi — saya fokus pada solusi yang praktis, terukur, dan dapat
+              diandalkan.
+            </p>
+
+            <p className="mt-5 text-sm font-bold uppercase tracking-[0.14em] text-inkwell">
+              Build better. Fix smarter. Stay secure.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
