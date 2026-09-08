@@ -10,7 +10,7 @@ export const projects = [
     featured: true,
     liveUrl: "https://www.kamangtangahanamsuku.com",
     githubUrl: null,
-    screenshots: [],
+    screenshots: ["/projects/kamang-tangah-anam-suku.png"],
     sections: [
       {
         heading: "Overview",
@@ -60,7 +60,7 @@ export const projects = [
     featured: true,
     liveUrl: "https://sikawal.padang.go.id",
     githubUrl: null,
-    screenshots: [],
+    screenshots: ["/projects/sikawal.png"],
     sections: [
       {
         heading: "Overview",
@@ -95,56 +95,6 @@ export const projects = [
       {
         heading: "What I Learned",
         body: "Proyek ini mengajarkan saya bagaimana mengembangkan aplikasi yang mendukung proses kerja nyata di sebuah organisasi. Saya belajar merancang sistem untuk ketertelusuran dan kontrol, serta pentingnya data dan alur yang cocok dengan kebutuhan pengguna.",
-      },
-    ],
-  },
-  {
-    title: "Analisis Data Big Data Kimia Farma",
-    slug: "kimia-farma-big-data-analysis",
-    summary:
-      "Analisis data dari dataset PT Kimia Farma untuk menemukan insight bisnis, termasuk data cleaning, visualisasi, dan pembangunan dashboard.",
-    category: "Data Analysis",
-    technologies: ["Python", "Pandas", "Data Analysis", "Data Visualization", "Dashboard"],
-    image: "/projects/kimia-farma-big-data-analysis/opengraph-image",
-    featured: true,
-    liveUrl:
-      "https://datastudio.google.com/u/0/reporting/149d467d-ab6d-4d32-bb6a-feff613db0a0/page/zxqJE",
-    githubUrl: null,
-    screenshots: [],
-    sections: [
-      {
-        heading: "Overview",
-        body: "Proyek ini adalah bagian dari program magang berbasis project di PT Kimia Farma. Saya menganalisis dataset perusahaan untuk memahami pola penjualan dan menghasilkan rekomendasi yang berguna bagi bisnis. Hasil analisis disajikan dalam bentuk dashboard agar mudah dipahami.",
-      },
-      {
-        heading: "Problem",
-        body: "Dataset mentah masih perlu dibersihkan dan disiapkan sebelum bisa dianalisis. Diperlukan proses untuk mengubah data menjadi informasi yang dapat ditindaklanjuti oleh pengambil keputusan.",
-      },
-      {
-        heading: "Solution",
-        body: "Saya melakukan data cleaning dan transformation, lalu menganalisis data dengan Python dan Pandas. Hasilnya divisualisasikan dan disajikan dalam dashboard yang menampilkan insight utama untuk membantu pengambilan keputusan.",
-      },
-      {
-        heading: "My Role",
-        body: "Saya berperan sebagai data analyst dalam project ini. Tugas saya mencakup menyiapkan dataset, melakukan analisis, membangun visualisasi, dan menyusun rekomendasi berdasarkan insight yang ditemukan.",
-      },
-      {
-        heading: "Key Features",
-        bullets: [
-          "Data cleaning dan transformation",
-          "Analisis pola data penjualan",
-          "Data visualization",
-          "Interactive dashboard",
-          "Business insights dan rekomendasi",
-        ],
-      },
-      {
-        heading: "Challenges",
-        body: "Data mentah memiliki banyak nilai kosong dan format yang belum konsisten. Dibutuhkan pemahaman yang baik terhadap struktur data untuk memilih langkah pembersihan dan transformasi yang tepat tanpa kehilangan informasi penting.",
-      },
-      {
-        heading: "What I Learned",
-        body: "Proyek ini memperkuat pemahaman saya tentang alur kerja analisis data dari data mentah menjadi insight. Saya belajar menggunakan Python dan Pandas untuk cleaning dan analisis, serta membangun visualisasi dan dashboard yang menyampaikan informasi secara jelas.",
       },
     ],
   },

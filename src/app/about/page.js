@@ -8,7 +8,7 @@ import { profile } from "@/data/profile";
 export const metadata = buildMetadata({
   title: "Tentang — IT Professional Padang, Sumatera Barat",
   description:
-    "Kenali Refdinal F, S.T.: IT professional & web developer di Padang, Sumatera Barat. Berpengalaman di web development, information security, IT assessment, IT governance, dan data analysis.",
+    "Kenali Refdinal F, S.T.: web developer & IT security consultant di Padang, Sumatera Barat. Berpengalaman di web development, information security, IT assessment, dan IT governance.",
   path: "/about",
 });
 

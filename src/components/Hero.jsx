@@ -25,13 +25,13 @@ export function Hero() {
             </h1>
 
             <p className="mt-3 text-xl font-semibold leading-snug text-inkwell sm:text-2xl">
-              {profile.role} · Web Development &amp; Information Security · {profile.region}
+              {profile.role} · {profile.region}
             </p>
 
             <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-muted lg:mx-0">
               Saya senang mempelajari teknologi melalui project nyata dan membangun solusi
               yang membantu menyelesaikan permasalahan praktis di bidang web development,
-              information security, IT assessment, dan data analysis.
+              information security, dan IT assessment.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">

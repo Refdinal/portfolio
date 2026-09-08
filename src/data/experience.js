@@ -46,7 +46,7 @@ export const experience = [
       "Menyusun rekomendasi business insights berdasarkan hasil analisis.",
     ],
     skills: ["Python", "Pandas", "Data Analysis", "Data Visualization", "Dashboard"],
-    projectSlug: "kimia-farma-big-data-analysis",
+    projectSlug: null,
   },
   {
     company: "Freelance",

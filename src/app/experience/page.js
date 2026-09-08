@@ -7,7 +7,7 @@ import { experience } from "@/data/experience";
 export const metadata = buildMetadata({
   title: "Pengalaman — IT & Web Development",
   description:
-    "Riwayat profesional Refdinal F, S.T. di Padang, Sumatera Barat: information security, IT assessment, web development, dan data analysis.",
+    "Riwayat profesional Refdinal F, S.T. di Padang, Sumatera Barat: information security, IT assessment, dan web development.",
   path: "/experience",
 });
 

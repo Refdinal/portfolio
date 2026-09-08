@@ -20,13 +20,6 @@ export const skillCategories = [
     items: ["JavaScript", "React.js", "Node.js", "PostgreSQL"],
   },
   {
-    name: "Data",
-    level: "Working Knowledge",
-    description:
-      "Kemampuan dalam mengolah dan menganalisis data untuk mengambil kesimpulan.",
-    items: ["Python", "Pandas", "Data Analysis", "Data Visualization"],
-  },
-  {
     name: "Information Security",
     level: "Working Knowledge",
     description:

@@ -84,11 +84,18 @@ export default async function ProjectPage({ params }) {
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-3">
           <div className="space-y-12 lg:col-span-2">
-            <ProjectVisual
-              title={project.title}
-              category={project.category}
-              image={project.image}
-            />
+            <div className="space-y-4">
+              {(project.screenshots.length ? project.screenshots : [project.image]).map(
+                (source) => (
+                  <ProjectVisual
+                    key={source}
+                    title={project.title}
+                    category={project.category}
+                    image={source}
+                  />
+                )
+              )}
+            </div>
 
             <div className="space-y-12">
               {project.sections.map(({ heading, body, bullets }, i) => (

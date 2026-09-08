@@ -1,13 +1,14 @@
 export const profile = {
   name: "Refdinal F, S.T.",
   firstName: "Refdinal",
-  role: "IT Professional",
+  role: "Web Developer & IT Security Consultant",
   tagline:
-    "IT Professional di Padang, Sumatera Barat — melayani web development, information security, IT assessment, IT governance, dan data analysis.",
+    "Web developer & IT security consultant di Padang, Sumatera Barat — melayani jasa pembuatan website nagari & desa, pembuatan dan perbaikan website, serta keamanan siber untuk instansi dan usaha.",
   location: "Padang, Sumatera Barat, Indonesia",
   locationShort: "Padang, Indonesia",
   region: "Sumatera Barat",
   email: "refdinalal@gmail.com",
+  whatsapp: "6282397841664",
   website: "https://www.refdinalf.com",
   image: "/images/profile.png",
   social: {
@@ -23,11 +24,10 @@ export const profile = {
     "IT Consultant & IT Assessment",
     "Information Security & Incident Response",
     "IT Governance & ISO/IEC 27001",
-    "Data Analysis",
   ],
   areaServed: ["Padang", "Bukittinggi", "Sumatera Barat", "Indonesia"],
   bio: [
-    "Saya adalah seorang IT Professional yang bekerja di bidang information security, IT assessment, dan IT governance di sebuah instansi pemerintah. Sebelumnya, saya membangun pengalaman di web development melalui project freelance dan belajar data analysis melalui proyek-proyek nyata.",
+    "Saya adalah seorang IT Professional yang bekerja di bidang information security, IT assessment, dan IT governance di sebuah instansi pemerintah. Sebelumnya, saya membangun pengalaman di web development melalui project freelance dan aplikasi internal yang digunakan di lingkungan kerja.",
     "Bagi saya, teknologi paling mudah dipelajari melalui project yang benar-benar diselesaikan. Saya senang mengubah permasalahan praktis menjadi solusi yang bekerja, baik itu aplikasi internal untuk mendukung assessment maupun website untuk kebutuhan masyarakat.",
     "Saat ini saya menekuni hal-hal yang berkaitan dengan information security, dokumentasi ISO/IEC 27001, security monitoring, serta pengembangan aplikasi internal untuk mendukung pengelolaan informasi.",
   ],

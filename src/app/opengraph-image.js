@@ -28,7 +28,7 @@ export default function Image() {
           {profile.name}
         </div>
         <div style={{ fontSize: 34, color: "#a1a1aa", marginTop: 24 }}>
-          Web Development · Information Security · IT Assessment · Data Analysis
+          Web Development · Information Security · IT Assessment · IT Governance
         </div>
         <div style={{ fontSize: 26, color: "#71717a", marginTop: 48 }}>
           {profile.website}

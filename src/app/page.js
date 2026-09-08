@@ -5,6 +5,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { ExperienceCard } from "@/components/ExperienceCard";
 import { SkillBadge } from "@/components/SkillBadge";
 import { Button } from "@/components/Button";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { ArrowRightIcon } from "@/components/Icons";
 import { getFeaturedProjects } from "@/data/projects";
 import { experience } from "@/data/experience";
@@ -14,9 +15,9 @@ import { profile } from "@/data/profile";
 
 export const metadata = buildMetadata({
   title:
-    "Refdinal F, S.T. — IT Consultant Padang & Web Developer | Web Development, Information Security, IT Assessment",
+    "Refdinal F, S.T. — Web Developer & IT Security Consultant Padang | Web Development & Information Security",
   description:
-    "Refdinal F, S.T., IT professional & IT consultant di Padang, Sumatera Barat. Melayani jasa pembuatan website nagari & desa, pembuatan website, perbaikan website, penanganan website kena hack, jasa keamanan siber, konsultasi IT gratis, IT assessment, dan analisis data untuk wilayah Padang, Bukittinggi, dan Sumatera Barat.",
+    "Refdinal F, S.T., web developer & IT security consultant di Padang, Sumatera Barat. Melayani jasa pembuatan website nagari & desa, pembuatan website, perbaikan website, penanganan website kena hack, jasa keamanan siber, konsultasi IT gratis, dan IT assessment untuk wilayah Padang, Bukittinggi, dan Sumatera Barat.",
   path: "/",
 });
 
@@ -42,16 +43,8 @@ const focusAreas = [
     text: "Diskusikan dulu kebutuhan website atau sistem Anda secara gratis sebelum memutuskan langkah berikutnya.",
   },
   {
-    title: "IT Consultant & IT Assessment",
-    text: "Menilai pengelolaan teknologi informasi organisasi dan menyusun rekomendasi perbaikan yang bisa ditindaklanjuti.",
-  },
-  {
-    title: "Information Security & Governance",
-    text: "Security monitoring, dokumentasi ISO/IEC 27001, dan tata kelola keamanan informasi.",
-  },
-  {
-    title: "Data Analysis",
-    text: "Analisis dan visualisasi data untuk membantu pengambilan keputusan.",
+    title: "IT Assessment & Information Security",
+    text: "Menilai pengelolaan teknologi informasi organisasi, security monitoring, dokumentasi ISO/IEC 27001, dan rekomendasi yang bisa ditindaklanjuti.",
   },
 ];
 
@@ -73,7 +66,7 @@ export default function Home() {
             id="what-i-do"
             eyebrow="Layanan"
             title="Jasa IT, Web Development & Keamanan Siber"
-            description="Melayani jasa pembuatan website, perbaikan website rusak atau kena hack, keamanan siber, IT consultancy, IT assessment, dan analisis data untuk wilayah Padang, Bukittinggi, dan Sumatera Barat — mengutamakan pengalaman nyata dan hasil yang bisa dibuktikan."
+            description="Melayani jasa pembuatan website, perbaikan website rusak atau kena hack, keamanan siber, IT consultancy, dan IT assessment untuk wilayah Padang, Bukittinggi, dan Sumatera Barat — mengutamakan pengalaman nyata dan hasil yang bisa dibuktikan."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {focusAreas.map(({ title, text }) => (
@@ -104,10 +97,14 @@ export default function Home() {
               ))}
             </div>
             <div className="mt-5">
-              <Button href="/contact" variant="primary" size="sm">
+              <WhatsAppLink
+                number={profile.whatsapp}
+                message="Halo, saya ingin konsultasi IT gratis."
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-inkwell px-4 py-2 text-sm font-medium text-on-accent shadow-lg shadow-inkwell/25 transition-colors hover:-translate-y-0.5 hover:bg-obsidian hover:text-paper hover:shadow-xl"
+              >
                 Konsultasi Gratis
                 <ArrowRightIcon className="h-4 w-4" />
-              </Button>
+              </WhatsAppLink>
             </div>
           </div>
         </div>

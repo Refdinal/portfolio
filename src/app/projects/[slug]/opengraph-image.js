@@ -30,7 +30,7 @@ export default async function Image({ params }) {
           {project ? project.title : "Refdinal — Projects"}
         </div>
         <div style={{ fontSize: 30, color: "#a1a1aa", marginTop: 24 }}>
-          {project ? project.summary : "Web Development · Information Security · Data Analysis"}
+          {project ? project.summary : "Web Development · Information Security · IT Assessment"}
         </div>
       </div>
     ),
