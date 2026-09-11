@@ -15,36 +15,36 @@ import { profile } from "@/data/profile";
 
 export const metadata = buildMetadata({
   title:
-    "Refdinal F, S.T. — Web Developer & IT Security Consultant Padang | Web Development & Information Security",
+    "Refdinal F, S.T. — Manggala Informatika Ahli Pertama | Information Security & Web Development",
   description:
-    "Refdinal F, S.T., web developer & IT security consultant di Padang, Sumatera Barat. Melayani jasa pembuatan website nagari & desa, pembuatan website, perbaikan website, penanganan website kena hack, jasa keamanan siber, konsultasi IT gratis, dan IT assessment untuk wilayah Padang, Bukittinggi, dan Sumatera Barat.",
+    "Portfolio dan perjalanan karir Refdinal F, S.T., Manggala Informatika Ahli Pertama di Padang, Sumatera Barat — information security, IT assessment, IT governance, dan web development.",
   path: "/",
 });
 
-const focusAreas = [
+const expertise = [
   {
-    title: "Jasa Pembuatan Website Nagari & Desa",
-    text: "Website informasi nagari/desa: profil, berita, data, dan agenda — seperti project Kamang Tangah Anam Suku.",
+    title: "Information Security & Incident Response",
+    text: "Security monitoring, deteksi aktivitas mencurigakan, serta penanganan dan pemulihan ketika terjadi insiden keamanan informasi.",
   },
   {
-    title: "Jasa Pembuatan Website & Web Development",
-    text: "Website instansi dan usaha dengan React.js, Node.js, dan PostgreSQL, dari desain hingga deployment.",
+    title: "IT Assessment & IT Governance",
+    text: "Menilai pengelolaan teknologi informasi organisasi dan menyusun rekomendasi yang bisa ditindaklanjuti.",
   },
   {
-    title: "Perbaikan & Pemulihan Website",
-    text: "Membantu memperbaiki website yang error, bermasalah, atau terkena serangan dan mengembalikannya seperti semula.",
+    title: "ISO/IEC 27001",
+    text: "Penyusunan dan pengelolaan dokumentasi keamanan informasi untuk kebutuhan audit dan assessment.",
   },
   {
-    title: "Jasa Keamanan Siber (Cyber Security)",
-    text: "Penanganan website yang kena hack, incident response, security monitoring, dan penguatan keamanan situs Anda.",
+    title: "Web Development",
+    text: "Pengembangan website dan aplikasi dengan React.js, Node.js, dan PostgreSQL, dari perancangan hingga deployment.",
   },
   {
-    title: "Konsultasi IT Gratis Dahulu",
-    text: "Diskusikan dulu kebutuhan website atau sistem Anda secara gratis sebelum memutuskan langkah berikutnya.",
+    title: "Data Analysis",
+    text: "Pengolahan, transformasi, dan visualisasi data untuk menghasilkan insight yang bisa digunakan.",
   },
   {
-    title: "IT Assessment & Information Security",
-    text: "Menilai pengelolaan teknologi informasi organisasi, security monitoring, dokumentasi ISO/IEC 27001, dan rekomendasi yang bisa ditindaklanjuti.",
+    title: "Aplikasi Internal & Pengelolaan Informasi",
+    text: "Pengembangan aplikasi internal yang mendukung proses kerja, assessment, dan pengelolaan informasi organisasi.",
   },
 ];
 
@@ -60,16 +60,16 @@ export default function Home() {
     <>
       <Hero />
 
-      <section className="bg-blush" aria-labelledby="what-i-do">
+      <section className="bg-blush" aria-labelledby="expertise">
         <div className={`py-16 sm:py-20 ${inner}`}>
           <SectionHeader
-            id="what-i-do"
-            eyebrow="Layanan"
-            title="Jasa IT, Web Development & Keamanan Siber"
-            description="Melayani jasa pembuatan website, perbaikan website rusak atau kena hack, keamanan siber, IT consultancy, dan IT assessment untuk wilayah Padang, Bukittinggi, dan Sumatera Barat — mengutamakan pengalaman nyata dan hasil yang bisa dibuktikan."
+            id="expertise"
+            eyebrow="Keahlian"
+            title="Bidang Keahlian"
+            description="Kompetensi yang saya bangun dan gunakan dalam pekerjaan sehari-hari di bidang information security, IT assessment, IT governance, dan web development."
           />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {focusAreas.map(({ title, text }) => (
+            {expertise.map(({ title, text }) => (
               <div key={title} className="rounded-2xl border border-border bg-paper p-6 text-foreground shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
                 <h3 className="text-base font-bold">{title}</h3>
                 <p className="mt-2 text-sm text-muted">{text}</p>
@@ -79,30 +79,20 @@ export default function Home() {
 
           <div className="mt-10 rounded-2xl border border-border bg-paper p-6 text-foreground shadow-sm">
             <h3 className="text-base font-bold">
-              Berbasis di Padang, melayani Sumatera Barat
+              Berlokasi di Padang, Sumatera Barat
             </h3>
             <p className="mt-2 text-sm text-muted">
-              Melayani jasa pembuatan website nagari, desa, instansi & usaha, perbaikan
-              website, penanganan website kena hack, jasa keamanan siber, serta konsultasi
-              IT gratis dahulu untuk wilayah {profile.areaServed.join(", ")}.
+              Saya berbasis di {profile.location}. Terbuka untuk diskusi, berbagi
+              pengalaman, maupun kolaborasi profesional di bidang web development
+              dan keamanan informasi.
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {profile.areaServed.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full bg-inkwell/10 px-3 py-1 text-xs font-medium text-inkwell"
-                >
-                  {area}
-                </span>
-              ))}
-            </div>
             <div className="mt-5">
               <WhatsAppLink
                 number={profile.whatsapp}
-                message="Halo, saya ingin konsultasi IT gratis."
+                message="Halo, saya ingin berdiskusi."
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-inkwell px-4 py-2 text-sm font-medium text-on-accent shadow-lg shadow-inkwell/25 transition-colors hover:-translate-y-0.5 hover:bg-obsidian hover:text-paper hover:shadow-xl"
               >
-                Konsultasi Gratis
+                Mulai Diskusi
                 <ArrowRightIcon className="h-4 w-4" />
               </WhatsAppLink>
             </div>
@@ -185,10 +175,11 @@ export default function Home() {
       <section className="bg-inkwell text-on-accent" aria-labelledby="contact">
         <div className={`py-16 text-center sm:py-20 ${inner}`}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl" id="contact">
-            Mari terhubung
+            Mari berkolaborasi
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-on-accent/80">
-            Tertarik untuk berkolaborasi atau sekadar berdiskusi? Silakan hubungi saya.
+            Terbuka untuk diskusi, berbagi, maupun kolaborasi profesional — mulai
+            dari pembuatan website, perbaikan sistem, hingga uji keamanan informasi.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button

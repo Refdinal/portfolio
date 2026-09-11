@@ -3,8 +3,9 @@ export const projects = [
     title: "Website Kamang Tangah Anam Suku",
     slug: "kamang-tangah-anam-suku",
     summary:
-      "Website informasi untuk Nagari Kamang Tangah Anam Suku yang dibangun sebagai project freelance, lengkap dengan sistem pengelolaan konten dan database.",
+      "Website informasi untuk Nagari Kamang Tangah Anam Suku yang online sejak 2024, lengkap dengan sistem pengelolaan konten dan database.",
     category: "Web Development",
+    period: "Sejak Juni 2024",
     technologies: ["JavaScript", "React.js", "Node.js", "PostgreSQL"],
     image: "/projects/kamang-tangah-anam-suku/opengraph-image",
     featured: true,
@@ -14,15 +15,15 @@ export const projects = [
     sections: [
       {
         heading: "Overview",
-        body: "Proyek ini adalah website informasi untuk Nagari Kamang Tangah Anam Suku. Website dibuat sebagai media untuk menyampaikan informasi nagari kepada masyarakat, seperti profil, berita, data, dan agenda kegiatan. Pengerjaan dimulai dari proses pemahaman kebutuhan, perancangan, hingga deployment dan maintenance.",
+        body: "Proyek ini adalah website informasi untuk Nagari Kamang Tangah Anam Suku yang mulai online sejak Juni 2024. Website menjadi media untuk menyampaikan informasi nagari kepada masyarakat, seperti profil, berita, data, dan agenda kegiatan. Pengerjaan dimulai dari proses pemahaman kebutuhan, perancangan, hingga deployment dan maintenance.",
       },
       {
         heading: "Problem",
-        body: "Informasi kepada masyarakat sering tersebar dan sulit diakses secara terpusat. Belum ada satu tempat yang menampung informasi nagari secara terstruktur sehingga masyarakat kesulitan mendapatkan informasi terkini maupun arsip data yang sudah ada.",
+        body: "Sebelum website ini ada, informasi nagari disampaikan secara terbatas melalui pesan WhatsApp dan mulut ke mulut, sehingga mudah tersebar dan sulit diakses kembali. Belum ada satu tempat yang menampung informasi nagari secara terstruktur, termasuk data yang terus berubah seperti data penduduk dan APB nagari.",
       },
       {
         heading: "Solution",
-        body: "Saya membangun website informasi terpusat yang dapat diakses masyarakat dari mana saja. Untuk memudahkan pengelolaan, saya juga menyiapkan bagian admin (CMS) sehingga konten dapat diperbarui tanpa perlu menyentuh kode secara langsung.",
+        body: "Saya membangun website informasi terpusat yang dapat diakses masyarakat dari mana saja. Konten dikelola langsung oleh staf nagari melalui fitur admin (CMS), sehingga berita dan data seperti data penduduk serta APB nagari dapat diperbarui secara berkala tanpa perlu menyentuh kode.",
       },
       {
         heading: "My Role",
@@ -32,12 +33,16 @@ export const projects = [
         heading: "Key Features",
         bullets: [
           "Halaman informasi dan profil nagari",
-          "Berita dan pengumuman",
-          "Halaman data nagari",
+          "Berita dan pengumuman yang dikelola staf nagari",
+          "Data nagari realtime, termasuk data penduduk dan APB nagari",
           "Kalender dan agenda kegiatan",
           "Sistem CMS/admin untuk mengelola konten",
           "Pengelolaan data melalui database",
         ],
+      },
+      {
+        heading: "Impact",
+        body: "Nagari lebih mudah mengelola dan menyajikan data penduduk serta APB nagari, sementara masyarakat dapat mengakses informasi secara terpusat. Website ini menjadi langkah awal digitalisasi nagari. Saya masih melakukan maintenance secara sukarela hingga sekarang.",
       },
       {
         heading: "Challenges",
@@ -55,6 +60,7 @@ export const projects = [
     summary:
       "Aplikasi internal untuk membantu pengelolaan dokumen, assessment, dan proses informasi, dikembangkan untuk mendukung kegiatan IT assessment di lingkungan kerja.",
     category: "Information Management / IT Assessment",
+    period: "Aktif digunakan",
     technologies: ["JavaScript", "React.js", "Node.js", "PostgreSQL"],
     image: "/projects/sikawal/opengraph-image",
     featured: true,
@@ -64,15 +70,15 @@ export const projects = [
     sections: [
       {
         heading: "Overview",
-        body: "SIKAWAL adalah aplikasi internal yang saya kembangkan untuk mendukung kegiatan assessment dan pengelolaan informasi instansi. Aplikasi ini membantu merapikan alur dokumen dan proses agar lebih terkontrol dan dapat diaudit. Karena aplikasi ini digunakan di lingkungan kerja, detail dan data yang bersifat internal tidak ditampilkan di sini.",
+        body: "SIKAWAL adalah aplikasi internal yang saya kembangkan untuk mendukung kegiatan assessment dan pengelolaan informasi di bidang saya. Aplikasi ini aktif digunakan oleh sekitar 8 orang dan membantu merapikan alur dokumen serta proses agar lebih terkontrol dan dapat diaudit. Karena aplikasi ini digunakan di lingkungan kerja, detail dan data yang bersifat internal tidak ditampilkan di sini.",
       },
       {
         heading: "Problem",
-        body: "Dokumen dan proses informasi yang tersebar membuat pengelolaan menjadi sulit dilacak. Dibutuhkan sebuah sistem yang dapat mengelola siklus hidup dokumen, memastikan proses berjalan sesuai alur, dan menyediakan jejak audit untuk kebutuhan assessment.",
+        body: "Dokumen dan proses informasi tersebar sehingga menyulitkan pencarian — sering kali file harus dicari secara manual tanpa tahu di mana letaknya. Dibutuhkan sebuah sistem yang mengelola siklus hidup dokumen, memastikan proses berjalan sesuai alur, menyediakan jejak audit untuk kebutuhan assessment, dan menjaga kerahasiaan berkas.",
       },
       {
         heading: "Solution",
-        body: "Saya mengembangkan aplikasi yang memusatkan pengelolaan dokumen dan proses pengambilan keputusan dalam satu tempat, lengkap dengan metadata, workflow, dan jejak audit agar setiap langkah dapat ditelusuri.",
+        body: "Saya mengembangkan aplikasi yang memusatkan pengelolaan dokumen dan proses pengambilan keputusan dalam satu tempat. Dokumen menjadi terintegrasi dan terpusat, lengkap dengan metadata, workflow, dan jejak audit, sementara file yang bersifat rahasia disimpan dalam keadaan terenkripsi.",
       },
       {
         heading: "My Role",
@@ -81,12 +87,19 @@ export const projects = [
       {
         heading: "Key Features",
         bullets: [
-          "Document management",
+          "Modul kelola dokumen",
+          "Modul Audit IKASANDI",
+          "Modul Indeks KAMI",
           "Kelengkapan metadata dokumen",
           "Workflow proses dan persetujuan",
           "Review dan approval berjenjang",
           "Audit trail untuk ketertelusuran",
+          "Enkripsi untuk dokumen rahasia",
         ],
+      },
+      {
+        heading: "Impact",
+        body: "Pengelolaan dokumen dan proses menjadi lebih terkontrol, terintegrasi, dan terpusat. Pencarian file tidak lagi dilakukan secara manual, dan dokumen rahasia tersimpan lebih aman.",
       },
       {
         heading: "Challenges",

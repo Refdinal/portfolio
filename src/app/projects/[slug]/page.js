@@ -147,6 +147,12 @@ export default async function ProjectPage({ params }) {
                   <dt className="text-muted">Kategori</dt>
                   <dd className="text-right">{project.category}</dd>
                 </div>
+                {project.period && (
+                  <div className="flex justify-between gap-4">
+                    <dt className="text-muted">Periode</dt>
+                    <dd className="text-right">{project.period}</dd>
+                  </div>
+                )}
                 <div className="flex justify-between gap-4">
                   <dt className="text-muted">Teknologi</dt>
                   <dd className="text-right">{project.technologies.join(", ")}</dd>

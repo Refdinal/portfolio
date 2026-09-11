@@ -29,10 +29,10 @@ export function Hero() {
             </p>
 
             <p className="mx-auto mt-5 max-w-md text-base leading-relaxed lg:mx-0">
-              Saya adalah{" "}
-              <span className="font-semibold text-inkwell">{profile.role}</span> yang
-              membantu organisasi membangun, memperbaiki, dan mengamankan sistem digital
-              mereka.
+              Saya bekerja sebagai{" "}
+              <span className="font-semibold text-inkwell">{profile.role}</span> di{" "}
+              {profile.organization}, dengan fokus pada information security, IT
+              assessment, dan pengembangan aplikasi internal.
             </p>
 
             <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted lg:mx-0">

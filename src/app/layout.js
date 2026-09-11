@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_URL, personSchema, websiteSchema, localBusinessSchema } from "@/lib/seo";
+import { SITE_URL, personSchema, websiteSchema } from "@/lib/seo";
 import { profile } from "@/data/profile";
 
 const interTight = Inter_Tight({
@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: SITE_URL,
   title: {
-    default: "Refdinal — IT Professional | Web Development & Information Security",
+    default: "Refdinal F, S.T. — Manggala Informatika Ahli Pertama | Information Security & Web Development",
     template: "%s | Refdinal",
   },
   description: profile.tagline,
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <JsonLd data={[personSchema(), websiteSchema(), localBusinessSchema()]} />
+        <JsonLd data={[personSchema(), websiteSchema()]} />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 export const experience = [
   {
-    company: "Instansi Pemerintah",
+    company: "Dinas Komunikasi dan Informatika Kota Padang",
     position: "Manggala Informatika Ahli Pertama",
     startDate: "2025-06-01",
     endDate: null,
@@ -50,11 +50,11 @@ export const experience = [
   },
   {
     company: "Freelance",
-    position: "Freelance Web Developer",
+    position: "Web Developer (Project-Based)",
     startDate: "2023-08-01",
     endDate: "2023-11-01",
     location: "Kamang, Indonesia",
-    type: "Freelance",
+    type: "Project-based",
     summary:
       "Mengembangkan website informasi untuk Nagari Kamang Tangah Anam Suku dari proses requirement gathering hingga deployment.",
     description: [
